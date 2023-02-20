@@ -33,6 +33,8 @@ const between = (n, min, max) => {
 }
 else{
 console.log("Seat is not available: ")
+
 }
 }
+console.log("======================={  Chances are over!  }=====================================")
   
