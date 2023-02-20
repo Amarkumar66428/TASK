@@ -7,7 +7,7 @@ const between = (n, min, max) => {
   }
   if (between(n,1,108)) {
     console.log("Seat is available: ");
-  function seatingArrangement(n){
+  function SeatingArrangement(n){
     const r = n % 12;
     const q = Math.floor(n/12);
     let fs;
@@ -19,17 +19,17 @@ const between = (n, min, max) => {
     }
     
     if(r===1 || r ===6 || r === 7 || r===0){
-      console.log('WS');
+      console.log('Window Seat');
     }
     else if(r===2 || r ===5 || r === 8 || r===11 ){
-      console.log('MS');
+      console.log('Middle Seat');
     }
     else{
-      console.log('AS');
+      console.log('Aisle Seat');
     }
     return fs;
   }
-  console.log(seatingArrangement(n));
+  console.log(SeatingArrangement(n));
 }
 else{
 console.log("Seat is not available: ")

@@ -1,6 +1,6 @@
 
 let stack = [];
-function balance_check(expression) {
+function isbalance_check(expression) {
   for (let i = 0; i < n; i++) {
     let char = s[i];
     if (char == "(" || char == "{" || char == "[") {
@@ -29,7 +29,7 @@ function balance_check(expression) {
 var  prompt =require('prompt-sync')();
 var s=prompt("Enter any Brackets: ");
 let n = s.length;
-if (balance_check(s, n)) {
+if (isbalance_check(s, n)) {
   console.log("balanced");
 } else {
   console.log("not balanced");
