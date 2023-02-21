@@ -1,14 +1,14 @@
 var prompt = require('prompt-sync')();
 
 console.log("======================={   Welcome To Lucky Draw  }=========================");
-prompt("Press enter to generate your number ");
+prompt("Press enter to generate a number ");
 
 function getUserNumber() {
   return Math.floor(Math.random() * 10);
   }
 
-const usernumber = getUserNumber();
-console.log("Your generated number is : " + usernumber);
+const userNumber = getUserNumber();
+console.log("Your generated number is : " + userNumber);
 
  prompt("Press enter to start");
 
@@ -25,7 +25,7 @@ console.log("Your generated number is : " + usernumber);
    console.log("The lucky number is : " + luckyNum);
 
 
-   if (luckyNum==usernumber) {
+   if (luckyNum==userNumber) {
   
   console.log("======================={  Congrats! You won  }================================");
   break;
@@ -38,4 +38,4 @@ else{
     prompt("Press enter to start again");
   }
 }
-console.log("Game finished!");
+console.log("-----------------------{   Game finished!   }---------------------------------");
